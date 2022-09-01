@@ -77,7 +77,8 @@ clearBtn.addEventListener('click', () => {
 
 const resetBtn = document.querySelector("#new");
 resetBtn.addEventListener('click', () => {
-    let size = +prompt("Enter new N (Max 100)");
+    let size = +prompt("Enter new N for NxN grid of squares (Max 100)");
+    if (!size) {size = 16;}
     let squares = document.querySelector(".squares");
     while (squares.firstChild) {
         squares.removeChild(squares.firstChild);
@@ -86,4 +87,5 @@ resetBtn.addEventListener('click', () => {
 });
 
 let size = +prompt("Enter N for NxN grid of squares (Max 100)");
+if (!size) {size = 16;} // Set default in case user cancels
 createGrid(size);
