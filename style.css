@@ -1,0 +1,13 @@
+h1 {
+    text-align: center;
+    margin-bottom: 0;
+    padding: 0;
+    line-height: 30px; /* Get rid of automatic extra space around text */
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    gap: 12px;
+}
